@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Admin Template</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="js/all.js"></script>
+</head>
+<body>
+    
+    <script src="js/all.js"></script>
+    <script src="js/datatables-simple-demo.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/simple-datatables.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script src="assets/demo/chart-area-demo.js"></script>
+    <script src="assets/demo/chart-bar-demo.js"></script>
+
+    <body>
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Awal Header-->
+            <a class="navbar-brand ps-3" href="index.html">Aplikasi Data Mahasiswa</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <!-- Navbar -->
+            <ul class="navbar-nav ms-auto me-0 me-md-3 my-2 my-md-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#!">profile</a></li>
+                        <li><a class="dropdown-item" href="#!">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Akhiri header -->
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_content">
+                <main>
+               <!--Awal Konten-->
+               <div class="container-fluid px-4">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <a type="button" class="btn btn-primary" href="">Tambah Siswa</a>
+                    </div>
+                    <div class="card-body">
+                        <table id="datatablesSimple" border="1">
+                            <head>
+                                <style>
+                                    td {
+                                        border: 1px solid black; /* Menampilkan garis hitam dengan ketebalan 1 piksel */
+                                        padding: 5px; /* Menambahkan padding untuk tampilan yang lebih baik */
+                                    }
+                                </style>
+                            <head>
+                                <style>
+                                    th:nth-child(4),
+                                    th:nth-child(5) {
+                                        padding-right: 20px; /* Menambahkan jarak 20 piksel di sebelah kanan elemen ke-4 (Jenis Kelamin) dan elemen ke-5 (Alamat) */
+                                    }
+                                </style>
+                            </head>
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>NIS</th>
+                                    <th>Nama Siswa</th>
+                                    <th>Jenis Kelamin</th> 
+                                    <th>Alamat</th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>8001</td>
+                                    <td>Andi Wijaya</td>
+                                    <td>Laki-laki</td>
+                                    <td>Wonogiri</td>
+                                    <td>
+                                        <a href="/edit_siswa">Edit</a> | <a href="/hapus_siswa">Hapus</a>
+                                    </td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>8002</td>
+                                    <td>Anita Larasati</td>
+                                    <td>Perempuan</td>
+                                    <td>Solo</td>
+                                    <td>
+                                        <a href="/edit_siswa">Edit</a> | <a href="/hapus_siswa">Hapus</a>
+                                    </td>
+                                    
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    </div>
+                </div>
+                <!--Akhiri Konten-->
+        </main>
+        <footer class="py-4 bg-light mt-auto">
+            <!-- Awal Footer-->
+            <div class="container-fluid px-4">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="text-muted">Copyright &copy; Demo 2022</div>
+                </div>
+            </div>
+            <!--Akhiri Footer-->
+        </footer>
+        
+</body>
+</html>
